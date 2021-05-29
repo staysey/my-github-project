@@ -1,0 +1,31 @@
+.pagination-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.pagination{
+    display: flex;
+    flex-flow: row;
+    align-self: flex-end;
+    justify-self: flex-end;
+    color: #808080;
+}
+.pagination-button{
+    background-color: #f9f9f9;
+    border: 0px solid #f9f9f9;
+    border-radius: 3px;
+    color: #808080;
+
+}
+.pagination-text{
+    margin-right: 25px;
+}
+
+.arrow-pagination-button{
+    background-color: #f9f9f9;
+    border: 0px solid #f9f9f9;
+}
+
+.arrow-pagination-button:active{
+    color: #0064EB;
+}
