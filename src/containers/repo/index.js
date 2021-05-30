@@ -78,10 +78,11 @@ class Repo extends Component
                             alt={user.login}
                         />
                     </div>
+                    <div className=''>
                     <h4 className='user-name' >{user.name}</h4>
                     <div className='user-login'><a href={url} target="_blank">{user.login}</a></div>
                     <p><img className = 'svg-users' src={multipleUsers} alt="multiple users" />{user.followers} followers
-                        <img className = 'svg-users-2' src={oneUser} alt="one user" />{user.following} following</p>
+                        <img className = 'svg-users-2' src={oneUser} alt="one user" />{user.following} following</p></div>
                 </div>
                 {(calcRepo(repo)!==0) && this.renderRepoList(repo)}
                 {(calcRepo(repo)===0) && <EmptyRepo></EmptyRepo>}
@@ -94,7 +95,7 @@ class Repo extends Component
         const repo_url = 'https://github.com/' + repo.owner.login + '/' + repo.name;
         this.state.counter+=1
         return (
-            <div key={index} className='repo-container ' >
+            <div key={index} className='repo-container' >
                 <div className='repo-text'>
                 <div className='repo-name'><a href={repo_url} target="_blank">{repo.name}</a></div>
                 <p>{repo.description}</p>
@@ -120,7 +121,7 @@ class Repo extends Component
         }
 
         return(
-            <div className='pagination-container'>
+            <div className='pagination-container col-md-8 col-lg-8 col-sm-8'>
                 <span className='repo-num'>Repositories ({calcRepo(repo)}) </span>
                 <span className='repo-all'>{slice.map((slice, index) => this.renderRepo(slice, index))}</span>
                 <div className='pagination'>
@@ -203,8 +204,8 @@ class Repo extends Component
         const renderInitialState = false;
         if(!renderInitialState) return (
             <div className='--bg'>
-                <div className='form-container col-md-12 col-lg-12 col-sm-12'>
-                <img className = '--svg-param' src={gitLogo} alt="git logo" />
+                <div className='form-container'>
+                <img className = '--svg-param --svg-param-adaptive' src={gitLogo} alt="git logo" />
                 <span className = 'input-group col-md-4 col-lg-4 col-sm-4 --adaptive-form'>
 
                     <span className='input-group-btn'>

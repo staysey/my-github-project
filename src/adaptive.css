@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1000px) {
-    .form-container{
-        align-self: flex-start;
+    .user-container{
+        display: flex;
+        flex-flow: row;
     }
     .main-container{
         display: flex;
@@ -8,13 +9,10 @@
         justify-content: space-around;
         margin-top: 30px;
         font-family: 'Inter', sans-serif;
-        height: 100vh;
+        height: 100%;
         background: #f9f9f9;
     }
-    .user-container{
-        display: flex;
-        flex-flow: column;
-    }
+
     .repo-num{
         font-weight: 600;
         font-size: 16px;
@@ -29,6 +27,7 @@
         font-weight: 500;
         padding-top: 20px;
         padding-left: 30px;
+        padding-bottom: 10px;
     }
 
     .repo-name{
@@ -38,7 +37,25 @@
     .sm-svg-user{
         border-radius: 50%;
         border: none;
-        width: 230px;
-        height: 230px;
+        width: 200px;
+        height: 200px;
     }
+    .--adaptive-form{
+        margin-left: 20px;
+    }
+    .--svg-param-adaptive{
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .user-name, .user-login, .svg-users, .svg-users-2{
+        align-self: center;
+    }
+    .pagination-container{
+        justify-content: center;
+        position: relative;
+        background: #f9f9f9;
+    }
+
 }

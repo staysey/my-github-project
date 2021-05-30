@@ -1,6 +1,6 @@
 .--bg{
     background: #f9f9f9;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-flow: column;
 }
@@ -21,6 +21,11 @@
 .search-icon-start{
     font-size: 65px;
     color: #808080;
+}
+
+.user-container{
+    display: flex;
+    flex-flow: column;
 }
 
 .--form-width{
@@ -56,6 +61,7 @@
         font-weight: 500;
         padding-top: 20px;
         padding-left: 30px;
+        padding-bottom: 20px;
     }
 
     .repo-name{
@@ -66,8 +72,15 @@
     .round {
         border-radius: 50%;
         border: none;
+        overflow: hidden;
         width: 280px;
         height: 280px;
+    }
+    .pagination-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background: #f9f9f9;
     }
 }
 
@@ -81,8 +94,7 @@
 }
 
 .repo-container{
-    width: 900px;
-    height: 100px;
+    height: auto;
     background: white;
     margin-top: 20px;
     border-radius: 6px;
@@ -116,6 +128,7 @@
     color: #0064EB;
     margin-bottom: 25px;
 }
+
 
 .svg-users{
     height: 30px;

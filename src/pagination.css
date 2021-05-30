@@ -1,8 +1,4 @@
-.pagination-container{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
+
 .pagination{
     display: flex;
     flex-flow: row;
